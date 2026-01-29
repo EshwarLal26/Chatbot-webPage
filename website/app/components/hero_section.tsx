@@ -1,58 +1,96 @@
 export default function HeroSection() {
   return (
-    <div className="hero-section">
-      <main className="hero-main">
-        <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center ">
-          <div className="grid max-w-screen-xl px-12 py-12 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            
-            <div className="mr-auto place-self-center lg:col-span-7">
-              <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                RAG-Powered AI Chatbot
-              </h1>
+    <section
+      className="relative min-h-screen flex items-center
+      bg-gradient-to-br from-indigo-50 via-white to-purple-50
+      dark:from-gray-900 dark:via-gray-900 dark:to-gray-800
+      overflow-hidden pt-32 -mt-36"
+    >
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-indigo-300/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -left-24 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl" />
+      </div>
 
-              <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                Ask questions and get accurate answers powered by
-                Retrieval-Augmented Generation using your own documents
-                and knowledge base.
-              </p>
+      <div className="relative grid max-w-screen-xl px-6 sm:px-8 lg:px-12 py-16 mx-auto lg:grid-cols-12 gap-8">
+        
+        {/* Left content */}
+        <div className="lg:col-span-7 flex flex-col justify-center">
+          <h1
+            data-aos="fade-out"
+            data-aos-delay="1000"
+            data-aos-duration="800"
+            className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-tight md:text-5xl xl:text-6xl text-gray-900 dark:text-white"
+          >
+            AI Chatbot for Website Content – Powered by RAG
+          </h1>
 
-              <a
-                href="/chat"
-                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-              >
-                Try the Chatbot
-                <svg
-                  className="w-5 h-5 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
+          <p
+            data-aos="fade-out"
+            data-aos-delay="1000"
+            data-aos-duration="800"
+            className="max-w-2xl mb-8 text-lg md:text-xl text-gray-600 dark:text-gray-400"
+          >
+            Ask questions and get accurate answers directly from website 
+          </p>
 
-              <a
-                href="#how-it-works"
-                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-              >
-                How It Works
-              </a>
-            </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="2000"
+            data-aos-duration="1600"
+            className="flex flex-wrap gap-4"
+          >
+            <a
+              href="/chat"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white rounded-lg bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-900 transition"
+            >
+              Try the Chatbot
+            </a>
 
-            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-              <img
-                src="data:image/jpeg;base64,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"
-                alt="RAG Chatbot UI mockup"
-              />
-            </div>
-
+            <a
+              href="#architecture"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 transition"
+            >
+              View Architecture
+            </a>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+
+        {/* Right visual */}
+        <div
+          data-aos="fade-in"
+          data-aos-delay="1500"
+          data-aos-duration="1200"
+          className="hidden lg:col-span-5 lg:flex items-center justify-center"
+        >
+          <div className="relative w-full max-w-sm p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-xl border border-gray-200 dark:border-gray-700">
+            
+            {/* Icons row */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center">
+                🤖
+              </div>
+              <div className="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+                🗄️
+              </div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                AI + Website Data
+              </div>
+            </div>
+
+            {/* Chat bubble mock */}
+            <div className="space-y-3">
+              <div className="self-start max-w-[80%] px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-sm text-gray-800 dark:text-gray-200">
+                How does pricing work?
+              </div>
+              <div className="self-end max-w-[80%] px-4 py-2 rounded-xl bg-indigo-600 text-sm text-white">
+                Pricing is based on usage and retrieved directly from your documentation.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   );
 }
