@@ -21,7 +21,7 @@ export default function FooterSection() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <span className="block text-gray-200 font-medium">Your Name</span>
+                <span className="block text-gray-200 font-medium">Decrypted Labs</span>
               </li>
              
              

@@ -102,13 +102,12 @@ export default function HeroSection() {
             </div>
 
             {/* Chat bubble mock */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="self-start max-w-[80%] px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-sm text-gray-800 dark:text-gray-200">
-                How does pricing work?
+                How does Chatbot work?
               </div>
               <div className="self-end max-w-[80%] px-4 py-2 rounded-xl bg-indigo-600 text-sm text-white">
-                Pricing is based on usage and retrieved directly from your documentation.
-              </div>
+scrapes web pages, stores their content, retrieves relevant information for a user query, and generates answers based on that content.              </div>
             </div>
           </div>
         </div>

@@ -59,7 +59,7 @@ export default function ProblemSolutionSection() {
               <li
                 key={index}
                 data-aos="fade-down"
-                data-aos-delay={1000 + index * 1000} // 👈 1 second gap
+                data-aos-delay={100 + index * 1000} // 👈 1 second gap
                 data-aos-duration="700"
                 className="flex items-start gap-3"
               >

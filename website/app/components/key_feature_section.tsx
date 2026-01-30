@@ -55,9 +55,13 @@ export default function KeyFeaturesSection() {
               key={feature.title}
               blur
               duration={700}
-              delay={600 + index * 180} // ⏱ staggered card reveal
+              delay={600 + index * 180}
+              className="h-full"
             >
-              <div className="p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+              <div className="h-full p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 
+                              border border-gray-200 dark:border-gray-700 
+                              shadow-sm flex flex-col">
+                
                 <div className="text-3xl mb-4">{feature.icon}</div>
 
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -67,6 +71,7 @@ export default function KeyFeaturesSection() {
                 <p className="text-gray-600 dark:text-gray-400">
                   {feature.desc}
                 </p>
+
               </div>
             </FadeContent>
           ))}
