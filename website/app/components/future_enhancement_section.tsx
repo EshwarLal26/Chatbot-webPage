@@ -17,7 +17,7 @@ export default function FutureEnhancementsSection() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
           {/* Multi-page crawling */}
-          <div data-aos="zoom-out-left" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <div data-aos="zoom-in-down" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
             <div className="text-3xl mb-4">🕸️</div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               Multi-page Crawling
@@ -31,7 +31,7 @@ export default function FutureEnhancementsSection() {
       
 
           {/* PDF support */}
-          <div data-aos="zoom-out-left" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <div data-aos="zoom-in-down" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
             <div className="text-3xl mb-4">📄</div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               PDF Upload Support
@@ -42,7 +42,7 @@ export default function FutureEnhancementsSection() {
           </div>
 
           {/* Multi-language */}
-          <div data-aos="zoom-out-left" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <div data-aos="zoom-in-down" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
             <div className="text-3xl mb-4">🌍</div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               Multi-language Support
@@ -53,7 +53,7 @@ export default function FutureEnhancementsSection() {
           </div>
 
           {/* Authentication */}
-          <div data-aos="zoom-out-left" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+          <div data-aos="zoom-in-down" className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
             <div className="text-3xl mb-4">🔐</div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               User Authentication

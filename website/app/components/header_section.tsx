@@ -7,7 +7,7 @@ export default function HeaderSection() {
   const [open, setOpen] = useState(false);
 
   return (
-   <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-transparent backdrop-blur-lg">
+   <header className="sticky top-0 z-50 w-full  border-white/10 bg-transparent backdrop-blur-lg">
 
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -22,7 +22,7 @@ export default function HeaderSection() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-10 text-lg font-semibold">
+        <nav className=" hidden md:flex items-center gap-10 text-lg font-semibold">
 
           {navLinks.map((link) => (
             <Link

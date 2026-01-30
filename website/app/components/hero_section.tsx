@@ -1,10 +1,21 @@
+
+"use client";
+
+import { i } from "motion/react-client";
+
+import SplitText from "@/components/SplitText";
+
+
 export default function HeroSection() {
+
+  const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
   return (
     <section
       className="relative min-h-screen flex items-center
-      bg-gradient-to-br from-indigo-50 via-white to-purple-50
-      dark:from-gray-900 dark:via-gray-900 dark:to-gray-800
-      overflow-hidden pt-32 -mt-36"
+      
+      overflow-hidden "
     >
       {/* Subtle background decoration */}
       <div className="absolute inset-0 pointer-events-none">
@@ -16,17 +27,32 @@ export default function HeroSection() {
         
         {/* Left content */}
         <div className="lg:col-span-7 flex flex-col justify-center">
-          <h1
-            data-aos="fade-out"
-            data-aos-delay="1000"
-            data-aos-duration="800"
-            className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-tight md:text-5xl xl:text-6xl text-gray-900 dark:text-white"
-          >
-            AI Chatbot for Website Content – Powered by RAG
-          </h1>
+
+
+
+
+         <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-tight md:text-5xl xl:text-6xl text-gray-900 dark:text-white">
+  <SplitText
+  text="  AI Chatbot for Website Content – Powered by RAG
+!"
+   className="text-4xl font-extrabold tracking-tight leading-tight md:text-5xl xl:text-6xl text-gray-900 dark:text-white"
+  delay={50}
+  duration={1.25}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+  
+/>
+</h1>
+
 
           <p
-            data-aos="fade-out"
+            data-aos="fade-left"
             data-aos-delay="1000"
             data-aos-duration="800"
             className="max-w-2xl mb-8 text-lg md:text-xl text-gray-600 dark:text-gray-400"

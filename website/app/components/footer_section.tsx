@@ -23,22 +23,8 @@ export default function FooterSection() {
               <li>
                 <span className="block text-gray-200 font-medium">Your Name</span>
               </li>
-              <li className="flex gap-4">
-                <a
-                  href="https://github.com/your-username"
-                  target="_blank"
-                  className="hover:text-white transition"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://linkedin.com/in/your-profile"
-                  target="_blank"
-                  className="hover:text-white transition"
-                >
-                  LinkedIn
-                </a>
-              </li>
+             
+             
             </ul>
           </div>
 
@@ -49,7 +35,7 @@ export default function FooterSection() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-16 pt-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
           <span>© {new Date().getFullYear()} RAG Website Chatbot</span>
-          <span className="mt-2 sm:mt-0">Built with Retrieval-Augmented Generation</span>
+          <span className="mt-2 sm:mt-0">Built with Decrypted Labs</span>
         </div>
       </div>
     </footer>
