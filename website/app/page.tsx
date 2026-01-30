@@ -11,7 +11,8 @@ export default function HomePage() {
     <>
  
 
-      <main>
+      <main >
+        
         <section id="hero">
           <HeroSection />
         </section>

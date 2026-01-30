@@ -12,21 +12,18 @@ export default function HeroSection() {
   console.log('All letters have animated!');
 };
   return (
-    <section
-      className="relative min-h-screen flex items-center
-      
-      overflow-hidden "
-    >
+<section className="min-h-screen flex items-center justify-center overflow-hidden">
+
       {/* Subtle background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-indigo-300/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -left-24 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl" />
+      <div className="absolute inset-0 pointer-events-none ">
+        <div className="absolute -top-24 -right-24   bg-indigo-300/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -left-24  h-96 bg-purple-300/20 rounded-full blur-3xl" />
       </div>
 
       <div className="relative grid max-w-screen-xl px-6 sm:px-8 lg:px-12 py-16 mx-auto lg:grid-cols-12 gap-8">
         
         {/* Left content */}
-        <div className="lg:col-span-7 flex flex-col justify-center">
+        <div className="lg:col-span-7 flex flex-col justify-center ">
 
 
 
